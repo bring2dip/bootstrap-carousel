@@ -66,6 +66,7 @@
  
 }
 
+/*Simple Carousel*/
 .carousel-simple .carousel-indicators {
   bottom:0;
 }
@@ -76,6 +77,29 @@
   border-radius: 2px;
 }
 
-.carousel-text .carousel-control .left, .carousel-text .carousel-control .right {
+
+/*Carousel Text*/
+.carousel-text {
+  border: thin solid #ccc;
+}
+
+.carousel-text .item {
+  background: #fff;  
+}
+
+.carousel-text .carousel-caption {
+  text-align: left;
+  text-shadow:none;
+  color: #000;
+}
+
+.carousel-text .carousel-control {
+  z-index: 9999;
+  width:5%;
+}
+
+.carousel-text .carousel-control.left, .carousel-text .carousel-control.right {
+  background-color: #bbb;
   background-image: none;
+  opacity: .7;
 }
