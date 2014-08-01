@@ -1,0 +1,40 @@
+{
+  "name": "HrevertGraphsCollection",
+  "version": "0.0.1",
+  "main": [
+    "src/css/bootstrap-carousel.css"
+  ],
+  "ignore": [
+    "./vendor/*",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.*"
+  },
+  "install": {
+    "path": {
+      "css": "vendor/css",
+      "js": "vendor/js"
+    }
+  },
+  "private": false,
+  "authors": [
+    "Deepak Bhattarai <bring2dip@gmail.com>"
+  ],
+  "description": "Customized Carousels using Bootstrap",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "bootstrap-carousel",
+    "carousel",
+    "bootstrap-image-slider",
+    "image-slider",
+  ],  
+  "homepage": "http://github.com/deepakbhattarai/bootstrap-carousel"
+}
