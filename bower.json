@@ -1,5 +1,5 @@
 {
-  "name": "HrevertGraphsCollection",
+  "name": "bootstrap-carousel",
   "version": "0.0.1",
   "main": [
     "src/css/bootstrap-carousel.css"
@@ -22,7 +22,6 @@
       "js": "vendor/js"
     }
   },
-  "private": false,
   "authors": [
     "Deepak Bhattarai <bring2dip@gmail.com>"
   ],
@@ -34,7 +33,8 @@
     "bootstrap-carousel",
     "carousel",
     "bootstrap-image-slider",
-    "image-slider",
-  ],  
-  "homepage": "http://github.com/deepakbhattarai/bootstrap-carousel"
+    "image-slider"
+  ],
+  "homepage": "http://github.com/deepakbhattarai/bootstrap-carousel",
+  "license": "MIT"
 }
