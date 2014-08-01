@@ -4,6 +4,19 @@
   height: 500px;  
 }
 
+.carousel-medium {
+  height: 400px;
+}
+
+.carousel-small {
+  height: 300px;
+}
+
+.carousel-large {
+  height: 600px;
+}
+
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -12,7 +25,19 @@
 /* Declare heights because of positioning of img element */
 .carousel .item {  
   height: 500px;
-  background-color: #000;
+  background-color: #555;
+}
+
+.carousel-medium .item {
+  height: 400px;
+}
+
+.carousel-small .item {
+  height: 300px;
+}
+
+.carousel-large .item {
+  height: 500px;
 }
 
 .carousel-inner > .item > img {
@@ -41,4 +66,16 @@
  
 }
 
+.carousel-simple .carousel-indicators {
+  bottom:0;
+}
 
+.carousel-simple .carousel-indicators li,.carousel-simple .carousel-indicators .active {
+  height: 20px;
+  width:20px;
+  border-radius: 2px;
+}
+
+.carousel-text .carousel-control .left, .carousel-text .carousel-control .right {
+  background-image: none;
+}
