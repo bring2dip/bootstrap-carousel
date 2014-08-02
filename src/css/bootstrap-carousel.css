@@ -45,8 +45,11 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
 }
+
+.carousel-indicators li {
+  text-indent: 0;
+} 
 
 
 /* RESPONSIVE CSS
@@ -64,6 +67,14 @@
 
 @media (min-width: 992px) {
  
+}
+
+.caption-left {
+  left:5%;
+}
+
+.caption-right{
+  right:5%;
 }
 
 /*Simple Carousel*/
@@ -93,13 +104,118 @@
   color: #000;
 }
 
-.carousel-text .carousel-control {
-  z-index: 9999;
+.carousel-text .carousel-control, .carousel-image .carousel-control {  
   width:5%;
 }
 
-.carousel-text .carousel-control.left, .carousel-text .carousel-control.right {
+.carousel-text .carousel-control.left, .carousel-text .carousel-control.right,
+.carousel-image .carousel-control .left, .carousel-image .carousel-control .right {
   background-color: #bbb;
   background-image: none;
-  opacity: .7;
+  opacity: 1;
+}
+
+/*carousel image*/
+
+@media (max-width:1040px) {
+  
+
+  .carousel-image.carousel, .carousel-image .item {
+    height: 300px;
+  } 
+
+  .carousel-image > .item > .img {
+    height: 300px;
+    min-width: auto;
+  }
+
+  .carousel-image .carousel-caption {
+    width: 100%;
+    text-align: center;
+    left:0;
+    bottom:0;    
+    padding:5px;    
+    background-color:#eee;
+  }
+
+  .carousel-image .carousel-caption .heading {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .carousel-image .carousel-caption p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .carousel-image .carousel-indicators {    
+    display: none;
+  }   
+
+  .carousel-image .carousel-control {
+    z-index: 11;
+    display: inline-block;
+    background: #ccc;
+  }
+
+
+}
+
+
+@media (min-width:1040px) {  
+
+  .carousel-image .carousel-control {
+    display: none;
+  }
+
+  .carousel-image .carousel-caption {
+    width: 350px;
+    top:6%;
+    left:5%;
+     bottom:auto;  
+    padding:20px;
+    text-align: left;  
+    background-color: rgba(255,255,255,0.8);
+  }
+  
+
+}
+
+
+
+.carousel-image .carousel-indicators li,.carousel-image .carousel-indicators .active {
+  position: relative;
+  height: 50px;
+  width:100px;
+  border-radius: 2px;  
+  border: none;
+  border-radius: 0;
+}
+
+.carousel-image .carousel-indicators li::after {
+  content:'';
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+.carousel-image .carousel-indicators .active::after {
+  content:'';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: none;
+}
+
+
+.carousel-image .carousel-indicators .active {
+  background:none ;
+}
+
+.carousel-image .carousel-caption {  
+  text-shadow:none;  
+  color:#000;
 }
